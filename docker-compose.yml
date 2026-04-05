@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  curriculum:
+    build: .
+    ports:
+      - "9813:9813"
+    volumes:
+      - curriculum_data:/data
+    environment:
+      - PORT=9813
+volumes:
+  curriculum_data:
